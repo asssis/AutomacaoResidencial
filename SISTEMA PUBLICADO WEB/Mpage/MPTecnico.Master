@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MPTecnico.master.cs" Inherits="HomeControl.Mpage.MPTecnico" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../Css/CorpoPagina.css" rel="stylesheet" />
+    <link href="../Css/MenuTopo.css" rel="stylesheet" />
+    <link href="../Css/BlocosControle.css" rel="stylesheet" />
+    <link href="../Css/BotoesControle.css" rel="stylesheet" />
+    <link href="../Css/CorpoPagina.css" rel="stylesheet" />
+    <link href="../Css/MenuLateralEsquerdo.css" rel="stylesheet" />
+    <link href="../Css/ControleFormulario.css" rel="stylesheet" />
+    <link href="../Css/Mensagens.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <meta name="viewport" content="width=device-width, initial-scale=1.2, maximum-scale=1, user-scalable=no">
+
+            <div class="menu_topo"><a>SisHomeControl - Controle Ambientes</a>
+                <a class="esquerda" href="../../Manuais/USUARIO.pdf">Ajuda</a></div>
+            <div class="menu_esquerdo">
+                <a href="../../Forms/Tecnico/WFIndex.aspx" onclick="menu('bloco1')">
+                    <img src="../../Img/casa.png" />Home</a>
+                <a href="#" onclick="menu('bloco2')">
+                    <img src="../../Img/cadastro.png" />Cadastro</a>
+                <div id="bloco2" class="minimizar_menu">
+                    <a href="../../Forms/Tecnico/WFManterUnidade.aspx">Unidade</a>
+                    <a href="../../Forms/Tecnico/WFManterDivisao.aspx">Divisão</a>
+                    <a href="../../Forms/Tecnico/WFManterDispositivo.aspx">Dispositivo</a>
+                    <a href="../../Forms/Tecnico/WFManterLeitor.aspx">Leitor</a>
+                    <a href="../../Forms/Tecnico/WFManterControle.aspx">Controle</a>
+                    <a href="../../Forms/Tecnico/WFManterComando.aspx">Comando</a>
+                </div>
+                <asp:LinkButton ID="lkbSair" runat="server" OnClick="lkbSair_Click">
+                    <img src="../../Img/sair.png" />Sair</asp:LinkButton>
+
+            </div>
+            <div class="corpo">
+                <div id="divMsn" class="invisible">
+                    <h3 id="h3Msn">Sucesso!</h3>
+                    <p id="pMsn">Sucesso no procedimento.</p>
+                </div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>     
+                
+                <footer>
+                    <p>© Barbosa, A. S. 2016. Todos os direitos reservados</p>
+                </footer>       
+            </div>
+        </meta>
+        <script src="../../Jscript/JSTecAdm.js"></script>
+    </form>
+</body>
+</html>

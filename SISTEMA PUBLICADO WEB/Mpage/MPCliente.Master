@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MPCliente.master.cs" Inherits="HomeControl.Mpage.MPCliente" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../Css/BotoesControle.css" rel="stylesheet" />
+    <link href="../Css/ControlesPersonalizados.css" rel="stylesheet" />
+    <link href="../Css/Mensagens.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="pre-visualizacao">
+            <meta name="viewport" content="width=device-width, initial-scale=0.4, maximum-scale=0.4, user-scalable=no">
+                <div id="divMsn" class="invisible">
+                    <h3 id="h3Msn">Sucesso!</h3>
+                    <p id="pMsn">Sucesso no procedimento.</p>
+                </div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>                
+                <footer>
+                    <p>© Barbosa, A. S. 2016. Todos os direitos reservados</p>
+                </footer>  
+            </meta>
+        </div>
+        <script src="../../Jscript/JSCliente.js"></script>
+    </form>
+</body>
+</html>

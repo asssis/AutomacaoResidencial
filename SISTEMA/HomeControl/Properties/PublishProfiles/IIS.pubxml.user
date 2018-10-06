@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Debug</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\inetpub\wwwroot\HomeControle</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/HomeControl.dll">
+      <publishTime>06/20/2016 14:23:30</publishTime>
+    </File>
+    <File Include="bin/HomeControl.pdb">
+      <publishTime>06/20/2016 14:23:30</publishTime>
+    </File>
+    <File Include="bin/Negocio.dll">
+      <publishTime>06/20/2016 13:13:55</publishTime>
+    </File>
+    <File Include="bin/Negocio.pdb">
+      <publishTime>06/20/2016 13:13:55</publishTime>
+    </File>
+    <File Include="Css/BlocosControle.css">
+      <publishTime>04/22/2016 18:15:11</publishTime>
+    </File>
+    <File Include="Css/BotoesControle.css">
+      <publishTime>06/20/2016 01:52:36</publishTime>
+    </File>
+    <File Include="Css/ControleFormulario.css">
+      <publishTime>06/14/2016 06:39:30</publishTime>
+    </File>
+    <File Include="Css/ControlesPersonalizados.css">
+      <publishTime>06/05/2016 15:34:23</publishTime>
+    </File>
+    <File Include="Css/CorpoPagina.css">
+      <publishTime>02/25/2016 13:22:12</publishTime>
+    </File>
+    <File Include="Css/Graficos.css">
+      <publishTime>04/22/2016 15:22:40</publishTime>
+    </File>
+    <File Include="Css/Mensagens.css">
+      <publishTime>04/22/2016 18:20:25</publishTime>
+    </File>
+    <File Include="Css/MenuLateralEsquerdo.css">
+      <publishTime>02/25/2016 13:15:46</publishTime>
+    </File>
+    <File Include="Css/MenuTopo.css">
+      <publishTime>06/05/2016 16:10:37</publishTime>
+    </File>
+    <File Include="Css/Responsivo.css">
+      <publishTime>02/07/2016 22:22:08</publishTime>
+    </File>
+    <File Include="default.aspx">
+      <publishTime>06/01/2016 14:25:26</publishTime>
+    </File>
+    <File Include="Forms/Administrador/WFBuscarCompania.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Forms/Administrador/WFBuscarCompaniaAgua.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Forms/Administrador/WFBuscarCompaniaEnergia.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Forms/Administrador/WFBuscarEventosMemoria.aspx">
+      <publishTime>06/19/2016 18:00:00</publishTime>
+    </File>
+    <File Include="Forms/Administrador/WFBuscarFalhas.aspx">
+      <publishTime>06/19/2016 18:01:39</publishTime>
+    </File>
+    <File Include="Forms/Administrador/WFBuscarUsuario.aspx">
+      <publishTime>06/20/2016 01:59:50</publishTime>
+    </File>
+    <File Include="Forms/Administrador/WFIndex.aspx">
+      <publishTime>06/05/2016 15:16:44</publishTime>
+    </File>
+    <File Include="Forms/Administrador/WFManterCompania.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Forms/Administrador/WFManterCompaniaAgua.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Forms/Administrador/WFManterCompaniaEnergia.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Forms/Administrador/WFManterUsuario.aspx">
+      <publishTime>03/30/2016 19:22:10</publishTime>
+    </File>
+    <File Include="Forms/Administrador/WFVisualizarClientes.aspx">
+      <publishTime>01/02/2016 10:13:47</publishTime>
+    </File>
+    <File Include="Forms/Administrador/WFVisualizarEventos.aspx">
+      <publishTime>01/02/2016 10:11:31</publishTime>
+    </File>
+    <File Include="Forms/Cliente/WFBuscarAgendamento.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Forms/Cliente/WFBuscarAgendamentos.aspx">
+      <publishTime>05/05/2016 10:24:27</publishTime>
+    </File>
+    <File Include="Forms/Cliente/WFBuscarEvento.aspx">
+      <publishTime>05/05/2016 17:22:03</publishTime>
+    </File>
+    <File Include="Forms/Cliente/WFConsumo.aspx">
+      <publishTime>06/05/2016 12:58:58</publishTime>
+    </File>
+    <File Include="Forms/Cliente/WFControle.aspx">
+      <publishTime>06/20/2016 11:23:53</publishTime>
+    </File>
+    <File Include="Forms/Cliente/WFDispositivo.aspx">
+      <publishTime>02/16/2016 09:50:12</publishTime>
+    </File>
+    <File Include="Forms/Cliente/WFDivisao.aspx">
+      <publishTime>03/08/2016 10:30:44</publishTime>
+    </File>
+    <File Include="Forms/Cliente/WFHistorico.aspx">
+      <publishTime>02/09/2016 22:09:38</publishTime>
+    </File>
+    <File Include="Forms/Cliente/WFManterAgendamento.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Forms/Cliente/WFManterEvento.aspx">
+      <publishTime>06/20/2016 14:02:46</publishTime>
+    </File>
+    <File Include="Forms/Cliente/WFRelatorioMensal.aspx">
+      <publishTime>01/01/2004 00:15:12</publishTime>
+    </File>
+    <File Include="Forms/Cliente/WFRelatorioSemanal.aspx">
+      <publishTime>03/29/2016 00:28:35</publishTime>
+    </File>
+    <File Include="Forms/Cliente/WFUnidade.aspx">
+      <publishTime>05/04/2016 11:23:01</publishTime>
+    </File>
+    <File Include="Forms/Tecnico/WFBuscarComando.aspx">
+      <publishTime>03/30/2016 19:22:11</publishTime>
+    </File>
+    <File Include="Forms/Tecnico/WFBuscarCompania.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Forms/Tecnico/WFBuscarControle.aspx">
+      <publishTime>03/30/2016 19:22:11</publishTime>
+    </File>
+    <File Include="Forms/Tecnico/WFBuscarDispositivo.aspx">
+      <publishTime>03/30/2016 19:22:11</publishTime>
+    </File>
+    <File Include="Forms/Tecnico/WFBuscarDivisao.aspx">
+      <publishTime>03/30/2016 19:22:11</publishTime>
+    </File>
+    <File Include="Forms/Tecnico/WFBuscarLeitor.aspx">
+      <publishTime>03/30/2016 19:22:11</publishTime>
+    </File>
+    <File Include="Forms/Tecnico/WFBuscarUnidade.aspx">
+      <publishTime>06/03/2016 17:13:13</publishTime>
+    </File>
+    <File Include="Forms/Tecnico/WFBuscarUsuario.aspx">
+      <publishTime>03/30/2016 19:22:11</publishTime>
+    </File>
+    <File Include="Forms/Tecnico/WFIndex.aspx">
+      <publishTime>06/17/2016 15:30:49</publishTime>
+    </File>
+    <File Include="Forms/Tecnico/WFManterComando.aspx">
+      <publishTime>04/27/2016 02:27:33</publishTime>
+    </File>
+    <File Include="Forms/Tecnico/WFManterControle.aspx">
+      <publishTime>05/06/2016 18:39:43</publishTime>
+    </File>
+    <File Include="Forms/Tecnico/WFManterDispositivo.aspx">
+      <publishTime>03/30/2016 19:22:10</publishTime>
+    </File>
+    <File Include="Forms/Tecnico/WFManterDivisao.aspx">
+      <publishTime>03/30/2016 19:22:10</publishTime>
+    </File>
+    <File Include="Forms/Tecnico/WFManterLeitor.aspx">
+      <publishTime>03/30/2016 19:19:15</publishTime>
+    </File>
+    <File Include="Forms/Tecnico/WFManterUnidade.aspx">
+      <publishTime>03/30/2016 19:16:48</publishTime>
+    </File>
+    <File Include="Forms/WFLogin.aspx">
+      <publishTime>06/13/2016 18:51:24</publishTime>
+    </File>
+    <File Include="Img/busca.png">
+      <publishTime>01/07/2016 19:51:40</publishTime>
+    </File>
+    <File Include="Img/cadastro.png">
+      <publishTime>01/07/2016 19:51:40</publishTime>
+    </File>
+    <File Include="Img/casa.png">
+      <publishTime>01/07/2016 19:51:40</publishTime>
+    </File>
+    <File Include="Img/on-of.png">
+      <publishTime>01/07/2016 19:51:40</publishTime>
+    </File>
+    <File Include="Img/sair.png">
+      <publishTime>01/07/2016 19:51:40</publishTime>
+    </File>
+    <File Include="Index.aspx">
+      <publishTime>05/02/2016 21:10:37</publishTime>
+    </File>
+    <File Include="Jscript/JSCliente.js">
+      <publishTime>04/01/2016 11:36:17</publishTime>
+    </File>
+    <File Include="Jscript/JSTecAdm.js">
+      <publishTime>03/30/2016 17:41:50</publishTime>
+    </File>
+    <File Include="Manuais/DESENVOLVEDOR.pdf">
+      <publishTime>06/13/2016 18:54:06</publishTime>
+    </File>
+    <File Include="Manuais/USUARIO.pdf">
+      <publishTime>06/09/2016 00:42:04</publishTime>
+    </File>
+    <File Include="Mpage/MPAdministrador.Master">
+      <publishTime>06/19/2016 16:31:35</publishTime>
+    </File>
+    <File Include="Mpage/MPCliente.Master">
+      <publishTime>06/19/2016 23:58:17</publishTime>
+    </File>
+    <File Include="Mpage/MPExterno.Master">
+      <publishTime>06/17/2016 15:24:49</publishTime>
+    </File>
+    <File Include="Mpage/MPTecnico.Master">
+      <publishTime>06/17/2016 21:16:37</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/19/2016 15:19:54</publishTime>
+    </File>
+    <File Include="WebService/webHomeControl.asmx">
+      <publishTime>01/29/2016 11:19:56</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

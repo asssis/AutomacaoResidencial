@@ -1,0 +1,215 @@
+﻿
+input[type="submit"]
+.ativo-vermelho {
+    background:#fc6b6b;
+    
+     color: #eee;
+}
+input[type="submit"].ativo-branco {
+    background:#ddd;
+    color:#000;
+}
+ input[type="submit"].ativo-amarelo {
+    background:#ff6a00;
+    
+     color: #eee;
+}
+ input[type="submit"].ativo-vermelho {
+    background: #fc6b6b;
+    color: #eee;
+}
+input[type="submit"].ativo {
+    background:#2b9dd1;
+    
+     color: #eee;
+}
+.ativo-vermelho {
+    background:#fc6b6b;
+    
+     color: #eee;
+}
+.ativo-verde {
+    background:#67c30b;
+    
+     color: #eee;
+}
+.ativo-branco {
+    background:#ddd;
+    color:#000;
+}
+.ativo-amarelo {
+    background:#dbc51a;
+    
+     color: #eee;
+}
+a.ativo {
+    background:#2b9dd1;
+     color: #eee;
+}
+ativo {
+    background:#2b9dd1;
+     color: #eee;
+}
+div.ativo {
+    background:#2b9dd1;
+     color: #eee;
+}
+.btn-touch-sair {
+     color: #eee;
+            font-size: 60px;
+            margin-top: -80px;
+            float: right;
+            background:#333;
+            border:0px;
+}
+.btn-touch-inteiro {
+            float:left;
+            
+            height: 100px;
+            background: #777;
+            border: 0px;
+     color: #eee;
+           font-size:30px;
+            border-radius: 10px;
+            margin: 2px;
+            width:calc(100% - 4px) ;
+        }
+.btn-touch-nulo {
+            float:left;
+            height: 100px;
+            background: #333;
+            border: 0px;
+     color: #eee;
+           font-size:30px;
+            border-radius: 10px;
+            margin: 2px;
+            width:calc(100% - 4px) ;  
+        }
+.btn-touch-nulo-disnable {
+            float:left;
+            height: 94px;
+            border:3px solid #777;
+            background: #333;
+     color: #eee;
+           font-size:30px;
+            border-radius: 10px;
+            margin: 2px;
+            width:calc(100% - 4px) ;  
+            pointer-events:none;
+        }
+.btn-touch-um-meio {
+            width:calc(50% - 4px);
+            height: 100px;
+            background: #777;
+            border: 0px;
+     color: #eee;
+            font-size:30px;
+            border-radius: 10px;
+            margin: 2px;
+            float: left;
+        }
+.btn-touch-um-terco {
+    width:calc(33.3333333% - 4px);
+    height: 100px;
+    background: #777;
+    border: 0px;
+     color: #eee;
+    font-size: 30px;
+    border-radius: 10px;
+    margin: 2px;
+    float: left;
+        }
+.btn-touch-dois-terco {
+    width:calc(66.6666666% - 4px);
+    height: 100px;
+    background: #777;
+    border: 0px;
+     color: #eee;
+    font-size: 30px;
+    border-radius: 10px;
+    margin: 2px;
+    float: left;
+        }
+.btn-touch-um-terco-ce { 
+     width:calc(33.3333333% - 4px);
+     height: 100px;
+     background: #777;
+     border: 0px;
+     color: #eee;
+     font-size: 30px;
+     border-radius:100px 0px 0px 0px;
+     margin: 2px;
+     float: left;
+}
+.btn-touch-um-terco-cd { 
+     width:calc(33.3333333% - 4px);
+     height: 100px;
+     background: #777;
+     border: 0px;
+     color: #eee;
+     font-size: 30px;
+     border-radius:0px 100px 0px 0px;
+     margin: 2px;
+     float: left;
+}
+.btn-touch-um-terco-be { 
+     width:calc(33.3333333% - 4px);
+     height: 100px;
+     background: #777;
+     border: 0px;
+     color: #eee;
+     font-size: 30px;
+     border-radius:0px 0px 0px 100px;
+     margin: 2px;
+     float: left;
+}
+.btn-touch-um-terco-bd { 
+     width:calc(33.3333333% - 4px);
+     height: 100px;
+     background: #777;
+     border: 0px;
+     color: #eee;
+     font-size: 30px;
+     border-radius:0px 0px 100px 0px;
+     margin: 2px;
+     float: left;
+}
+.btn-touch-um-terco-quadrado {
+     width:calc(33.3333333% - 4px);
+     height: 100px;
+     background: #777;
+     border: 0px;
+     color: #eee;
+     font-size: 30px;
+     border-radius:0px 0px 0px 0px;
+     margin: 2px;
+     float: left;
+}
+input[type="submit"]:hover {
+    background: #2b9dd1;
+    border: 0px;
+    color: #eee;
+    cursor:pointer;
+}
+
+.range-touch-inteiro {
+float:left;            
+height: 100px;
+color: #eee;
+font-size:30px;
+border-radius: 10px;
+margin: 2px;
+margin-top:40px;
+margin-bottom:10px;
+width:calc(100% - 4px) ;
+}
+.btn-range-margin {
+    margin-bottom:-30px;
+}
+.btn-selecionar-range {
+    width:100%;
+    background:#eee;
+    border-radius:5px;
+    border:0px;
+    margin-top:0px;
+}

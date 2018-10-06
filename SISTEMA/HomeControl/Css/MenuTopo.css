@@ -1,0 +1,18 @@
+﻿
+.menu_topo {
+    background-image: linear-gradient(to bottom, #222222, #111111);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#111111));
+    width: 100%;
+    height: 50px;
+    margin-bottom: 5px;
+
+}
+div.menu_topo > a {
+    color: #999999;
+    font-size: 20px;
+    margin-top: 15px;
+    float: left;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    margin-left:20px;
+}

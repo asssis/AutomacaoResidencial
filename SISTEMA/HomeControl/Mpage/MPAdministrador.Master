@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MPAdministrador.master.cs" Inherits="HomeControl.Mpage.MPAdministrador" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../Css/CorpoPagina.css" rel="stylesheet" />
+    <link href="../Css/MenuTopo.css" rel="stylesheet" />
+    <link href="../Css/BlocosControle.css" rel="stylesheet" />
+    <link href="../Css/CorpoPagina.css" rel="stylesheet" />
+    <link href="../Css/MenuLateralEsquerdo.css" rel="stylesheet" />
+    <link href="../Css/BotoesControle.css" rel="stylesheet" />
+    <link href="../Css/ControleFormulario.css" rel="stylesheet" />
+    <link href="../Css/Mensagens.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="menu_topo"><a>SisHomeControl - Controle Ambientes</a>
+            <a class="esquerda" href="../../Manuais/USUARIO.pdf">Ajuda</a></div>
+        <div class="menu_esquerdo">
+            <a href="../../Forms/Administrador/WFIndex.aspx" onclick="menu('bloco1')">
+                <img src="../../Img/casa.png" />Home</a>
+            <a href="#" onclick="menu('bloco2')">
+                <img src="../../Img/cadastro.png" />Usuario</a>
+            <div id="bloco2" class="minimizar_menu">
+                <a href="../../Forms/Administrador/WFManterUsuario.aspx">Manter</a>                
+                <a href="../../Forms/Administrador/WFBuscarEventosMemoria.aspx">Eventos</a>                           
+                <a href="../../Forms/Administrador/WFBuscarFalhas.aspx">Erros</a>
+            </div>
+                <asp:LinkButton ID="lkbSair" runat="server" OnClick="lkbSair_Click"><img src="../../Img/sair.png" />Sair</asp:LinkButton>
+        </div>
+        <div class="corpo">
+            <div id="divMsn" class="invisible">
+                <h3 id="h3Msn">Sucesso!</h3>
+                <p id="pMsn">Sucesso no procedimento.</p>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>      
+        <footer>
+            <p>© Barbosa, A. S. 2016. Todos os direitos reservados</p>
+        </footer>      
+        </div>
+        <script src="../../Jscript/JSTecAdm.js"></script>
+    </form>    
+</body>
+</html>

@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MPExterno.master.cs" Inherits="HomeControl.Mpage.MPExterno" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../Css/CorpoPagina.css" rel="stylesheet" />
+    <link href="../Css/MenuTopo.css" rel="stylesheet" />
+    <link href="../Css/BlocosControle.css" rel="stylesheet" />
+    <link href="../Css/CorpoPagina.css" rel="stylesheet" />
+    <link href="../Css/MenuLateralEsquerdo.css" rel="stylesheet" />
+    <link href="../Css/ControleFormulario.css" rel="stylesheet" />
+    <link href="../Css/Mensagens.css" rel="stylesheet" />
+    <style>
+        form{
+            height:calc(100% - 10px);
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+              <div class="menu_topo"><a>SisHomeControl - Controle Ambientes</a>
+                  <a class="esquerda" href="../Manuais/USUARIO.pdf">Ajuda Usuário</a>
+                  <a class="esquerda" href="../Manuais/DESENVOLVEDOR.pdf">Ajuda Desenvolvedor</a>
+              </div>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+    </form>
+    
+</body>
+</html>

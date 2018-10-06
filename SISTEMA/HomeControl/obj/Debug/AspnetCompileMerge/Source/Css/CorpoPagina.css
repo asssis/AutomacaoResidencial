@@ -1,0 +1,18 @@
+﻿
+  body {
+            height: 600px;
+            background:#fff;
+            padding:0px;
+            margin:0px;
+            width:100%;
+        }
+
+       
+
+        .corpo {
+            height: 300px;
+            float: left;
+            width: calc(100% - 260px);
+            height: calc(800px - 4px);
+            min-width: calc(250px - 2px);
+        }

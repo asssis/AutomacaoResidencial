@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="LogarUnidade">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="objUsuario" type="tns:Usuario" />
+            <s:element minOccurs="0" maxOccurs="1" name="objUnidade" type="tns:Unidade" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Usuario">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ObjsUnidades" type="tns:ArrayOfUnidade" />
+          <s:element minOccurs="0" maxOccurs="1" name="Login" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Senha" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CpfCnpj" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nome" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Telefone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Nivel" type="tns:NivelAcesso" />
+          <s:element minOccurs="1" maxOccurs="1" name="Ativacao" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfUnidade">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Unidade" nillable="true" type="tns:Unidade" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Unidade">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ObjUsuario" type="tns:Usuario" />
+          <s:element minOccurs="0" maxOccurs="1" name="ObjsDivisoes" type="tns:ArrayOfDivisao" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cep" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Numero" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Endereco" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Bairro" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cidade" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Estado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Pais" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Tempo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Descricao" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDivisao">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Divisao" nillable="true" type="tns:Divisao" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Divisao">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ObjUnidade" type="tns:Unidade" />
+          <s:element minOccurs="0" maxOccurs="1" name="ObjsDispositivos" type="tns:ArrayOfDispositivo" />
+          <s:element minOccurs="0" maxOccurs="1" name="Descricao" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDispositivo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Dispositivo" nillable="true" type="tns:Dispositivo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Dispositivo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nome" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ObjDivisao" type="tns:Divisao" />
+          <s:element minOccurs="0" maxOccurs="1" name="ObjControle" type="tns:Controle" />
+          <s:element minOccurs="0" maxOccurs="1" name="ObjsLeitores" type="tns:ArrayOfLeitor" />
+          <s:element minOccurs="0" maxOccurs="1" name="ObjsEventos" type="tns:ArrayOfEvento" />
+          <s:element minOccurs="0" maxOccurs="1" name="Porta" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PinoEntrada" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Controle">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ObjsComandos" type="tns:ArrayOfComando" />
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Equipamento" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Marca" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Modelo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Tipocontrole" type="tns:TipoControle" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfComando">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Comando" nillable="true" type="tns:Comando" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Comando">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ObjControle" type="tns:Controle" />
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cmd" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nome" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Estilo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cor" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ConsumoEnergia" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ConsumoAgua" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="TipoControle">
+        <s:restriction base="s:string">
+          <s:enumeration value="NULL" />
+          <s:enumeration value="SIMPLES" />
+          <s:enumeration value="LOGICO" />
+          <s:enumeration value="GRADUAL" />
+          <s:enumeration value="ESPECIFICO" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ArrayOfLeitor">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Leitor" nillable="true" type="tns:Leitor" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Leitor">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nome" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PinoSaida" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Porta" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Sensibilidade" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Condicao" type="tns:Condicao" />
+          <s:element minOccurs="1" maxOccurs="1" name="TipoLeitor" type="tns:TipoLeitor" />
+          <s:element minOccurs="0" maxOccurs="1" name="ObjDispositivo" type="tns:Dispositivo" />
+          <s:element minOccurs="0" maxOccurs="1" name="ObjComando" type="tns:Comando" />
+          <s:element minOccurs="1" maxOccurs="1" name="Valor" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Resultado" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="PrimeiraLeitura" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="Condicao">
+        <s:restriction base="s:string">
+          <s:enumeration value="NULL" />
+          <s:enumeration value="MENOR" />
+          <s:enumeration value="MAIOR" />
+          <s:enumeration value="IGUAL" />
+          <s:enumeration value="DIFERENTE" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="TipoLeitor">
+        <s:restriction base="s:string">
+          <s:enumeration value="NULL" />
+          <s:enumeration value="OPTOACOPLADOR" />
+          <s:enumeration value="AMPERIMETRO" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ArrayOfEvento">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Evento" nillable="true" type="tns:Evento" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Evento">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ObjComando" type="tns:Comando" />
+          <s:element minOccurs="0" maxOccurs="1" name="ObjDispositvo" type="tns:Dispositivo" />
+          <s:element minOccurs="0" maxOccurs="1" name="ObjAgenda" type="tns:Agenda" />
+          <s:element minOccurs="0" maxOccurs="1" name="Potencia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Retorno" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Agenda">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Hora" type="tns:TimeSpan" />
+          <s:element minOccurs="0" maxOccurs="1" name="HoraToString" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Domingo" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Segunda" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Terca" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Quarta" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Quinta" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Sexta" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Sabado" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TimeSpan" />
+      <s:simpleType name="NivelAcesso">
+        <s:restriction base="s:string">
+          <s:enumeration value="NULL" />
+          <s:enumeration value="CLIENTE" />
+          <s:enumeration value="TECNICO" />
+          <s:enumeration value="ADMINISTRADOR" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="LogarUnidadeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LogarUnidadeResult" type="tns:Unidade" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarEvento">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obj" type="tns:Unidade" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarEventoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarEventoResult" type="tns:Evento" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarEventoBanco">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obj" type="tns:Unidade" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarEventoBancoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarEventoBancoResult" type="tns:ArrayOfEvento" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarLeitoresUnidade">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obj" type="tns:Unidade" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarLeitoresUnidadeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarLeitoresUnidadeResult" type="tns:ArrayOfDispositivo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GravarEvento">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obj" type="tns:Evento" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GravarEventoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GravarEventoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GravarHistorico">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obj" type="tns:Historico" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Historico">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Descricao" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ObjComando" type="tns:Comando" />
+          <s:element minOccurs="0" maxOccurs="1" name="ObjDispositivo" type="tns:Dispositivo" />
+          <s:element minOccurs="1" maxOccurs="1" name="Momento" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ConsumoEnergia" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="ConsumoAgua" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GravarHistoricoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GravarHistoricoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="LogarUnidadeSoapIn">
+    <wsdl:part name="parameters" element="tns:LogarUnidade" />
+  </wsdl:message>
+  <wsdl:message name="LogarUnidadeSoapOut">
+    <wsdl:part name="parameters" element="tns:LogarUnidadeResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuscarEventoSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarEvento" />
+  </wsdl:message>
+  <wsdl:message name="BuscarEventoSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarEventoResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuscarEventoBancoSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarEventoBanco" />
+  </wsdl:message>
+  <wsdl:message name="BuscarEventoBancoSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarEventoBancoResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuscarLeitoresUnidadeSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarLeitoresUnidade" />
+  </wsdl:message>
+  <wsdl:message name="BuscarLeitoresUnidadeSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarLeitoresUnidadeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GravarEventoSoapIn">
+    <wsdl:part name="parameters" element="tns:GravarEvento" />
+  </wsdl:message>
+  <wsdl:message name="GravarEventoSoapOut">
+    <wsdl:part name="parameters" element="tns:GravarEventoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GravarHistoricoSoapIn">
+    <wsdl:part name="parameters" element="tns:GravarHistorico" />
+  </wsdl:message>
+  <wsdl:message name="GravarHistoricoSoapOut">
+    <wsdl:part name="parameters" element="tns:GravarHistoricoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="webHomeControlSoap">
+    <wsdl:operation name="LogarUnidade">
+      <wsdl:input message="tns:LogarUnidadeSoapIn" />
+      <wsdl:output message="tns:LogarUnidadeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarEvento">
+      <wsdl:input message="tns:BuscarEventoSoapIn" />
+      <wsdl:output message="tns:BuscarEventoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarEventoBanco">
+      <wsdl:input message="tns:BuscarEventoBancoSoapIn" />
+      <wsdl:output message="tns:BuscarEventoBancoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarLeitoresUnidade">
+      <wsdl:input message="tns:BuscarLeitoresUnidadeSoapIn" />
+      <wsdl:output message="tns:BuscarLeitoresUnidadeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GravarEvento">
+      <wsdl:input message="tns:GravarEventoSoapIn" />
+      <wsdl:output message="tns:GravarEventoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GravarHistorico">
+      <wsdl:input message="tns:GravarHistoricoSoapIn" />
+      <wsdl:output message="tns:GravarHistoricoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="webHomeControlSoap" type="tns:webHomeControlSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LogarUnidade">
+      <soap:operation soapAction="http://tempuri.org/LogarUnidade" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarEvento">
+      <soap:operation soapAction="http://tempuri.org/BuscarEvento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarEventoBanco">
+      <soap:operation soapAction="http://tempuri.org/BuscarEventoBanco" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarLeitoresUnidade">
+      <soap:operation soapAction="http://tempuri.org/BuscarLeitoresUnidade" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GravarEvento">
+      <soap:operation soapAction="http://tempuri.org/GravarEvento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GravarHistorico">
+      <soap:operation soapAction="http://tempuri.org/GravarHistorico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="webHomeControlSoap12" type="tns:webHomeControlSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LogarUnidade">
+      <soap12:operation soapAction="http://tempuri.org/LogarUnidade" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarEvento">
+      <soap12:operation soapAction="http://tempuri.org/BuscarEvento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarEventoBanco">
+      <soap12:operation soapAction="http://tempuri.org/BuscarEventoBanco" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarLeitoresUnidade">
+      <soap12:operation soapAction="http://tempuri.org/BuscarLeitoresUnidade" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GravarEvento">
+      <soap12:operation soapAction="http://tempuri.org/GravarEvento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GravarHistorico">
+      <soap12:operation soapAction="http://tempuri.org/GravarHistorico" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="webHomeControl">
+    <wsdl:port name="webHomeControlSoap" binding="tns:webHomeControlSoap">
+      <soap:address location="http://201.30.212.74/AssisJunior/WebService/webHomeControl.asmx" />
+    </wsdl:port>
+    <wsdl:port name="webHomeControlSoap12" binding="tns:webHomeControlSoap12">
+      <soap12:address location="http://201.30.212.74/AssisJunior/WebService/webHomeControl.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

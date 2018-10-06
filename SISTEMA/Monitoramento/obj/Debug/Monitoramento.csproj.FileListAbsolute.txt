@@ -1,0 +1,55 @@
+C:\Users\Junior\Desktop\TCC SISTEMA\PATCH\Monitoramento\Monitoramento\bin\Debug\Monitoramento.exe.config
+C:\Users\Junior\Desktop\TCC SISTEMA\PATCH\Monitoramento\Monitoramento\obj\Debug\Monitoramento.csprojResolveAssemblyReference.cache
+C:\Users\Junior\Desktop\TCC SISTEMA\PATCH\Monitoramento\Monitoramento\obj\Debug\Monitoramento.frmLogin.resources
+C:\Users\Junior\Desktop\TCC SISTEMA\PATCH\Monitoramento\Monitoramento\obj\Debug\Monitoramento.frmMonitorar.resources
+C:\Users\Junior\Desktop\TCC SISTEMA\PATCH\Monitoramento\Monitoramento\obj\Debug\Monitoramento.Properties.Resources.resources
+C:\Users\Junior\Desktop\TCC SISTEMA\PATCH\Monitoramento\Monitoramento\obj\Debug\Monitoramento.csproj.GenerateResource.Cache
+C:\Users\Junior\Desktop\TCC SISTEMA\PATCH\Monitoramento\Monitoramento\bin\Debug\Monitoramento.exe
+C:\Users\Junior\Desktop\TCC SISTEMA\PATCH\Monitoramento\Monitoramento\bin\Debug\Monitoramento.pdb
+C:\Users\Junior\Desktop\TCC SISTEMA\PATCH\Monitoramento\Monitoramento\obj\Debug\Monitoramento.exe
+C:\Users\Junior\Desktop\TCC SISTEMA\PATCH\Monitoramento\Monitoramento\obj\Debug\Monitoramento.pdb
+C:\Users\Junior\Desktop\TCC SISTEMA\Monitoramento\bin\Debug\Monitoramento.exe.config
+C:\Users\Junior\Desktop\TCC SISTEMA\Monitoramento\bin\Debug\Monitoramento.exe
+C:\Users\Junior\Desktop\TCC SISTEMA\Monitoramento\bin\Debug\Monitoramento.pdb
+C:\Users\Junior\Desktop\TCC SISTEMA\Monitoramento\obj\Debug\Monitoramento.csprojResolveAssemblyReference.cache
+C:\Users\Junior\Desktop\TCC SISTEMA\Monitoramento\obj\Debug\Monitoramento.frmLogin.resources
+C:\Users\Junior\Desktop\TCC SISTEMA\Monitoramento\obj\Debug\Monitoramento.frmMonitorar.resources
+C:\Users\Junior\Desktop\TCC SISTEMA\Monitoramento\obj\Debug\Monitoramento.Properties.Resources.resources
+C:\Users\Junior\Desktop\TCC SISTEMA\Monitoramento\obj\Debug\Monitoramento.csproj.GenerateResource.Cache
+C:\Users\Junior\Desktop\TCC SISTEMA\Monitoramento\obj\Debug\Monitoramento.exe
+C:\Users\Junior\Desktop\TCC SISTEMA\Monitoramento\obj\Debug\Monitoramento.pdb
+C:\Users\Junior_2\Desktop\TCC HomeControl\TCC SISTEMA\Monitoramento\bin\Debug\Monitoramento.exe.config
+C:\Users\Junior_2\Desktop\TCC HomeControl\TCC SISTEMA\Monitoramento\bin\Debug\Monitoramento.exe
+C:\Users\Junior_2\Desktop\TCC HomeControl\TCC SISTEMA\Monitoramento\bin\Debug\Monitoramento.pdb
+C:\Users\Junior_2\Desktop\TCC HomeControl\TCC SISTEMA\Monitoramento\obj\Debug\Monitoramento.csprojResolveAssemblyReference.cache
+C:\Users\Junior_2\Desktop\TCC HomeControl\TCC SISTEMA\Monitoramento\obj\Debug\Monitoramento.frmLogin.resources
+C:\Users\Junior_2\Desktop\TCC HomeControl\TCC SISTEMA\Monitoramento\obj\Debug\Monitoramento.frmMonitorar.resources
+C:\Users\Junior_2\Desktop\TCC HomeControl\TCC SISTEMA\Monitoramento\obj\Debug\Monitoramento.Properties.Resources.resources
+C:\Users\Junior_2\Desktop\TCC HomeControl\TCC SISTEMA\Monitoramento\obj\Debug\Monitoramento.csproj.GenerateResource.Cache
+C:\Users\Junior_2\Desktop\TCC HomeControl\TCC SISTEMA\Monitoramento\obj\Debug\Monitoramento.exe
+C:\Users\Junior_2\Desktop\TCC HomeControl\TCC SISTEMA\Monitoramento\obj\Debug\Monitoramento.pdb
+C:\Users\Junior\Desktop\TCC HomeControl\TCC SISTEMA\Monitoramento\bin\Debug\Monitoramento.exe.config
+C:\Users\Junior\Desktop\TCC HomeControl\TCC SISTEMA\Monitoramento\bin\Debug\Monitoramento.exe
+C:\Users\Junior\Desktop\TCC HomeControl\TCC SISTEMA\Monitoramento\bin\Debug\Monitoramento.pdb
+C:\Users\Junior\Desktop\TCC HomeControl\TCC SISTEMA\Monitoramento\obj\Debug\Monitoramento.csprojResolveAssemblyReference.cache
+C:\Users\Junior\Desktop\TCC HomeControl\TCC SISTEMA\Monitoramento\obj\Debug\Monitoramento.frmLogin.resources
+C:\Users\Junior\Desktop\TCC HomeControl\TCC SISTEMA\Monitoramento\obj\Debug\Monitoramento.frmMonitorar.resources
+C:\Users\Junior\Desktop\TCC HomeControl\TCC SISTEMA\Monitoramento\obj\Debug\Monitoramento.Properties.Resources.resources
+C:\Users\Junior\Desktop\TCC HomeControl\TCC SISTEMA\Monitoramento\obj\Debug\Monitoramento.csproj.GenerateResource.Cache
+C:\Users\Junior\Desktop\TCC HomeControl\TCC SISTEMA\Monitoramento\obj\Debug\Monitoramento.exe
+C:\Users\Junior\Desktop\TCC HomeControl\TCC SISTEMA\Monitoramento\obj\Debug\Monitoramento.pdb
+C:\Users\Malta\Desktop\TCC\SISTEMA\Monitoramento\bin\Debug\Monitoramento.exe.config
+C:\Users\Malta\Desktop\TCC\SISTEMA\Monitoramento\bin\Debug\Monitoramento.exe
+C:\Users\Malta\Desktop\TCC\SISTEMA\Monitoramento\bin\Debug\Monitoramento.pdb
+C:\Users\Malta\Desktop\TCC\SISTEMA\Monitoramento\obj\Debug\Monitoramento.csprojResolveAssemblyReference.cache
+C:\Users\Malta\Desktop\TCC\SISTEMA\Monitoramento\obj\Debug\Monitoramento.frmLogin.resources
+C:\Users\Malta\Desktop\TCC\SISTEMA\Monitoramento\obj\Debug\Monitoramento.frmMonitorar.resources
+C:\Users\Malta\Desktop\TCC\SISTEMA\Monitoramento\obj\Debug\Monitoramento.Properties.Resources.resources
+C:\Users\Malta\Desktop\TCC\SISTEMA\Monitoramento\obj\Debug\Monitoramento.csproj.GenerateResource.Cache
+C:\Users\Malta\Desktop\TCC\SISTEMA\Monitoramento\obj\Debug\Monitoramento.exe
+C:\Users\Malta\Desktop\TCC\SISTEMA\Monitoramento\obj\Debug\Monitoramento.pdb
+C:\Users\Malta\Desktop\TCC\SISTEMA\Monitoramento\obj\Debug\Monitoramento.TrustInfo.xml
+C:\Users\Malta\Desktop\TCC\SISTEMA\Monitoramento\bin\Debug\Monitoramento.exe.manifest
+C:\Users\Malta\Desktop\TCC\SISTEMA\Monitoramento\bin\Debug\Monitoramento.application
+C:\Users\Malta\Desktop\TCC\SISTEMA\Monitoramento\obj\Debug\Monitoramento.exe.manifest
+C:\Users\Malta\Desktop\TCC\SISTEMA\Monitoramento\obj\Debug\Monitoramento.application

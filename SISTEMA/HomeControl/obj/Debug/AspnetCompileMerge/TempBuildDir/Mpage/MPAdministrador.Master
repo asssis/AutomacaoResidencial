@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MPAdministrador.master.cs" Inherits="HomeControl.Mpage.MPAdministrador" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../Css/CorpoPagina.css" rel="stylesheet" />
+    <link href="../Css/MenuTopo.css" rel="stylesheet" />
+    <link href="../Css/BlocosControle.css" rel="stylesheet" />
+    <link href="../Css/CorpoPagina.css" rel="stylesheet" />
+    <link href="../Css/MenuLateralEsquerdo.css" rel="stylesheet" />
+    <link href="../Css/BotoesControle.css" rel="stylesheet" />
+    <link href="../Css/ControleFormulario.css" rel="stylesheet" />
+    <link href="../Css/Mensagens.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="menu_topo"></div>
+        <div class="menu_esquerdo">
+            <a href="#" onclick="menu('bloco1')">
+                <img src="/Img/casa.png" />Home</a>
+            <a href="#" onclick="menu('bloco2')">
+                <img src="/Img/cadastro.png" />Usuario</a>
+            <div id="bloco2" class="minimizar_menu">
+                <a href="/Forms/Administrador/WFManterUsuario.aspx">Manter</a>
+            </div>
+            <a href="#" onclick="menu('bloco4')">
+                <img src="/Img/sair.png" />Sair</a>
+        </div>
+        <div class="corpo">
+            <div id="divMsn" class="invisible">
+                <h3 id="h3Msn">Sucesso!</h3>
+                <p id="pMsn">Sucesso no procedimento.</p>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+            <script type="text/javascript">
+                function menu(bloco) {
+                    if (document.getElementById(bloco).getAttribute("class") == "minimizar_menu") {
+                        document.getElementById(bloco).setAttribute("class", "maximinizar_menu");
+                    }
+                    else {
+                        document.getElementById(bloco).setAttribute("class", "minimizar_menu");
+                    }
+                }
+                function close_msn() {
+                    document.getElementById('msn').innerHTML = "";
+                    document.getElementById('msn').setAttribute("class", "invisible");
+                }
+                function exibir_msn(tipo, msn) {
+                    if (tipo == 's') {
+                        divMsn.setAttribute("class", "msn-sucesso msn-dim");
+                        h3Msn.innerText = "Sucesso!";
+                        pMsn.innerText = msn;
+                    }
+                    if (tipo == 'a') {
+                        divMsn.setAttribute("class", "msn-atencao msn-dim");
+                        h3Msn.innerText = "Atenção!";
+                        pMsn.innerText = msn;
+                    }
+                    if (tipo == 'e') {
+                        divMsn.setAttribute("class", "msn-erro msn-dim");
+                        h3Msn.innerText = "Erro!";
+                        pMsn.innerText = msn;
+                    }
+                }
+                function MascaraCnpj(campo) {
+                    if (campo.value.length == 2) { campo.value += '.'; }
+                    if (campo.value.length == 6) { campo.value += '.'; }
+                    if (campo.value.length == 10) { campo.value += '/'; }
+                    if (campo.value.length == 15) { campo.value += '-'; }
+                } function MascaraCpf(campo) {
+                    if (campo.value.length == 3) { campo.value += '.'; }
+                    if (campo.value.length == 7) { campo.value += '.'; }
+                    if (campo.value.length == 11) { campo.value += '-'; }
+                }
+
+                function MascaraData(campo) {
+
+                    if (campo.value.length == 2) { campo.value += '/'; }
+                    if (campo.value.length == 5) { campo.value += '/'; }
+                }
+                function MascaraTelefone(campo) {
+
+                    if (campo.value.length == 0) { campo.value += '('; }
+                    if (campo.value.length == 3) { campo.value += ')'; }
+                    if (campo.value.length == 4) { campo.value += ' '; }
+                    if (campo.value.length == 9) { campo.value += '-'; }
+                }
+                function MascaraCep(campo) {
+                    if (campo.value.length == 5) { campo.value += '-'; }
+                }
+    </script>
+    </form>
+</body>
+</html>

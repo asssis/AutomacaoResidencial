@@ -1,0 +1,34 @@
+C:\Users\Junior\Desktop\TCC SISTEMA\PATCH\Monitoramento\HomeControl\bin\HomeControl.dll
+C:\Users\Junior\Desktop\TCC SISTEMA\PATCH\Monitoramento\HomeControl\bin\HomeControl.pdb
+C:\Users\Junior\Desktop\TCC SISTEMA\PATCH\Monitoramento\HomeControl\obj\Debug\HomeControl.csprojResolveAssemblyReference.cache
+C:\Users\Junior\Desktop\TCC SISTEMA\PATCH\Monitoramento\HomeControl\obj\Debug\HomeControl.dll
+C:\Users\Junior\Desktop\TCC SISTEMA\PATCH\Monitoramento\HomeControl\obj\Debug\HomeControl.pdb
+C:\Users\Junior\Desktop\TCC SISTEMA\HomeControl\obj\Debug\HomeControl.csprojResolveAssemblyReference.cache
+C:\Users\Junior\Desktop\TCC SISTEMA\HomeControl\obj\Debug\HomeControl.dll
+C:\Users\Junior\Desktop\TCC SISTEMA\HomeControl\obj\Debug\HomeControl.pdb
+C:\Users\Junior\Desktop\TCC SISTEMA\HomeControl\bin\HomeControl.dll
+C:\Users\Junior\Desktop\TCC SISTEMA\HomeControl\bin\HomeControl.pdb
+C:\Users\Junior\Desktop\TCC SISTEMA\HomeControl\bin\Negocio.dll
+C:\Users\Junior\Desktop\TCC SISTEMA\HomeControl\bin\Negocio.pdb
+C:\Users\Junior_2\Desktop\TCC HomeControl\TCC SISTEMA\HomeControl\bin\HomeControl.dll
+C:\Users\Junior_2\Desktop\TCC HomeControl\TCC SISTEMA\HomeControl\bin\HomeControl.pdb
+C:\Users\Junior_2\Desktop\TCC HomeControl\TCC SISTEMA\HomeControl\bin\Negocio.dll
+C:\Users\Junior_2\Desktop\TCC HomeControl\TCC SISTEMA\HomeControl\bin\Negocio.pdb
+C:\Users\Junior_2\Desktop\TCC HomeControl\TCC SISTEMA\HomeControl\obj\Debug\HomeControl.csprojResolveAssemblyReference.cache
+C:\Users\Junior_2\Desktop\TCC HomeControl\TCC SISTEMA\HomeControl\obj\Debug\HomeControl.dll
+C:\Users\Junior_2\Desktop\TCC HomeControl\TCC SISTEMA\HomeControl\obj\Debug\HomeControl.pdb
+C:\Users\Junior\Desktop\TCC HomeControl\TCC SISTEMA\HomeControl\bin\HomeControl.dll
+C:\Users\Junior\Desktop\TCC HomeControl\TCC SISTEMA\HomeControl\bin\HomeControl.pdb
+C:\Users\Junior\Desktop\TCC HomeControl\TCC SISTEMA\HomeControl\bin\Negocio.dll
+C:\Users\Junior\Desktop\TCC HomeControl\TCC SISTEMA\HomeControl\bin\Negocio.pdb
+C:\Users\Junior\Desktop\TCC HomeControl\TCC SISTEMA\HomeControl\obj\Debug\HomeControl.csprojResolveAssemblyReference.cache
+C:\Users\Junior\Desktop\TCC HomeControl\TCC SISTEMA\HomeControl\obj\Debug\HomeControl.dll
+C:\Users\Junior\Desktop\TCC HomeControl\TCC SISTEMA\HomeControl\obj\Debug\HomeControl.pdb
+C:\Users\Malta\Desktop\TCC\SISTEMA\HomeControl\bin\HomeControl.dll.config
+C:\Users\Malta\Desktop\TCC\SISTEMA\HomeControl\bin\HomeControl.dll
+C:\Users\Malta\Desktop\TCC\SISTEMA\HomeControl\bin\HomeControl.pdb
+C:\Users\Malta\Desktop\TCC\SISTEMA\HomeControl\bin\Negocio.dll
+C:\Users\Malta\Desktop\TCC\SISTEMA\HomeControl\bin\Negocio.pdb
+C:\Users\Malta\Desktop\TCC\SISTEMA\HomeControl\obj\Debug\HomeControl.csprojResolveAssemblyReference.cache
+C:\Users\Malta\Desktop\TCC\SISTEMA\HomeControl\obj\Debug\HomeControl.dll
+C:\Users\Malta\Desktop\TCC\SISTEMA\HomeControl\obj\Debug\HomeControl.pdb

@@ -1,0 +1,107 @@
+﻿ /*BLOCOS*/
+        .inicio {
+            clear: both;
+        }
+
+        .inicio {
+            clear: both;
+        }
+
+        .bloco-inteiro {
+            width: calc(100% - 10px);
+            min-height: 100px;
+            min-width: 245px;
+            border-top: 50px solid #777;
+            border-left: 1px solid #777;
+            border-bottom: 1px solid #777;
+            border-right: 1px solid #777;
+            border-radius: 5px;
+            float: left;
+            margin-top: 10px;
+            margin-left:5px;
+            background:#fff;
+        }
+.bloco-inteiro>h2 {
+    margin-top:-30px;
+    margin-left:10px;
+    color:#fff;
+}
+.bloco-inteiro>h3 {
+    margin-left:20px;
+    margin-top:40px;
+    margin-bottom:10px;
+    clear:both;
+    float:left;
+    color:#777;
+}
+        .bloco-tres-quarto {
+            width: calc(75% - 20px);
+            min-height: 100px;
+            min-width: 245px;
+            border-top: 50px solid #2b9dd1;
+            border-left: 1px solid #2b9dd1;
+            border-bottom: 1px solid #2b9dd1;
+            border-right: 1px solid #2b9dd1;
+            border-radius: 5px;
+            float: left;
+            margin-top: 10px;
+            margin-right: 5px;
+            margin-left:5px;
+        }
+
+        .bloco-um-meio {
+            width: calc(50% - 20px);
+            min-height: 100px;
+            min-width: 245px;
+            border-top: 50px solid #2b9dd1;
+            border-left: 1px solid #2b9dd1;
+            border-bottom: 1px solid #2b9dd1;
+            border-right: 1px solid #2b9dd1;
+            border-radius: 5px;
+            float: left;
+            margin-top: 10px;
+            margin-right: 5px;
+            margin-left:5px;
+        }
+
+        .bloco-um-quarto {
+            width: calc(25% - 20px);
+            min-height: 100px;
+            min-width: 106px;
+            border-top: 50px solid #2b9dd1;
+            border-left: 1px solid #2b9dd1;
+            border-bottom: 1px solid #2b9dd1;
+            border-right: 1px solid #2b9dd1;
+            border-radius: 5px;
+            float: left;
+            margin-top: 10px;
+            margin-right: 5px;
+            margin-left:10px;
+        }
+
+         .bloco-login {
+            border-radius: 5px;
+            position:absolute;
+            left:calc(50% - 200px);
+            top:30%;
+            margin-top: 10px;
+            background:#333;
+            left:calc(50% - 200px);
+            width:400px;
+        }
+div.bloco-login>h2 {
+    margin-left:20px;
+    color:#fff;
+}
+.btn-login {
+    float:right;
+    margin-left:20px;
+    margin-right:20px;
+    margin-bottom:20px;
+    height:30px;
+    background:#0094ff;
+    border-radius:4px;
+    border:#0094ff;
+    color:#fff;
+
+}

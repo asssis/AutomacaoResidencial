@@ -1,0 +1,182 @@
+﻿
+input[type="submit"]
+.ativo-vermelho {
+    background:#fc6b6b;
+    color:#fff;
+}
+input[type="submit"].ativo-branco {
+    background:#ddd;
+    color:#000;
+}
+ input[type="submit"].ativo-amarelo {
+    background:#ff6a00;
+    color:#fff;
+}
+input[type="submit"].ativo {
+    background:#2b9dd1;
+    color:#fff;
+}
+.ativo-vermelho {
+    background:#fc6b6b;
+    color:#fff;
+}
+.ativo-verde {
+    background:#67c30b;
+    color:#fff;
+}
+.ativo-branco {
+    background:#ddd;
+    color:#000;
+}
+.ativo-amarelo {
+    background:#dbc51a;
+    color:#fff;
+}
+a.ativo {
+    background:#2b9dd1;
+    color:#fff;
+}
+ativo {
+    background:#2b9dd1;
+    color:#fff;
+}
+div.ativo {
+    background:#2b9dd1;
+    color:#fff;
+}
+.btn-touch-sair {
+    color: #fff;
+            font-size: 60px;
+            margin-top: -80px;
+            float: right;
+            background:#333;
+            border:0px;
+}
+.btn-touch-inteiro {
+            float:left;
+            
+            height: 100px;
+            background: #777;
+            border: 0px;
+            color: #fff;
+           font-size:30px;
+            border-radius: 10px;
+            margin: 2px;
+            width:calc(100% - 4px) ;
+        }
+.btn-touch-um-meio {
+            width:calc(50% - 4px);
+            height: 100px;
+            background: #777;
+            border: 0px;
+            color: #fff;
+            font-size:30px;
+            border-radius: 10px;
+            margin: 2px;
+            float: left;
+        }
+.btn-touch-um-terco {
+    width:calc(33.3333333% - 4px);
+    height: 100px;
+    background: #777;
+    border: 0px;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 10px;
+    margin: 2px;
+    float: left;
+        }
+.btn-touch-dois-terco {
+    width:calc(66.6666666% - 4px);
+    height: 100px;
+    background: #777;
+    border: 0px;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 10px;
+    margin: 2px;
+    float: left;
+        }
+.btn-touch-um-terco-ce { 
+     width:calc(33.3333333% - 4px);
+     height: 100px;
+     background: #777;
+     border: 0px;
+     color: #fff;
+     font-size: 30px;
+     border-radius:100px 0px 0px 0px;
+     margin: 2px;
+     float: left;
+}
+.btn-touch-um-terco-cd { 
+     width:calc(33.3333333% - 4px);
+     height: 100px;
+     background: #777;
+     border: 0px;
+     color: #fff;
+     font-size: 30px;
+     border-radius:0px 100px 0px 0px;
+     margin: 2px;
+     float: left;
+}
+.btn-touch-um-terco-be { 
+     width:calc(33.3333333% - 4px);
+     height: 100px;
+     background: #777;
+     border: 0px;
+     color: #fff;
+     font-size: 30px;
+     border-radius:0px 0px 0px 100px;
+     margin: 2px;
+     float: left;
+}
+.btn-touch-um-terco-bd { 
+     width:calc(33.3333333% - 4px);
+     height: 100px;
+     background: #777;
+     border: 0px;
+     color: #fff;
+     font-size: 30px;
+     border-radius:0px 0px 100px 0px;
+     margin: 2px;
+     float: left;
+}
+.btn-touch-um-terco-quadrado {
+     width:calc(33.3333333% - 4px);
+     height: 100px;
+     background: #777;
+     border: 0px;
+     color: #fff;
+     font-size: 30px;
+     border-radius:0px 0px 0px 0px;
+     margin: 2px;
+     float: left;
+}
+input[type="submit"]:hover {
+    background: #2b9dd1;
+    border: 0px;
+    color: #fff;
+    cursor:pointer;
+}
+
+.range-touch-inteiro {
+float:left;            
+height: 100px;
+color: #fff;
+font-size:30px;
+border-radius: 10px;
+margin: 2px;
+margin-top:40px;
+margin-bottom:10px;
+width:calc(100% - 4px) ;
+}
+.btn-range-margin {
+    margin-bottom:-30px;
+}
+.btn-selecionar-range {
+    width:100%;
+    background:#777;
+    border-radius:5px;
+    border:0px;
+    margin-top:0px;
+}

@@ -1,0 +1,207 @@
+﻿Create table Usuario
+(
+id int identity not null,
+login varchar(50),
+senha varchar(50),
+nome varchar(50),
+email varchar(50),
+rg varchar(50),
+telefone varchar(50),
+cpf_cnpj varchar(50),
+estado int,
+nivel int
+)
+ALTER TABLE Usuario
+		ADD CONSTRAINT PK_USUARIO
+		PRIMARY KEY(id)
+
+ Create table Unidade(
+ id int identity not null,
+ id_usuario int,
+ descricao varchar(50),
+ bairro varchar(50),
+ cep varchar(50),
+ cidade varchar(50),
+ endereco varchar(50),
+ estado varchar(50),
+ pais varchar(50),
+ tempo varchar(50),
+ )
+ ALTER TABLE Unidade
+		ADD CONSTRAINT PK_UNIDADE
+		PRIMARY KEY(id)
+		
+ALTER TABLE Unidade
+        ADD CONSTRAINT FK_UNIDADE_USUARIO	
+		FOREIGN KEY (id_usuario)
+		REFERENCES Usuario(id)
+
+Create table Divisao
+(
+id int identity not null,
+id_unidade int,
+descricao varchar(50),
+)
+ALTER TABLE Divisao
+		ADD CONSTRAINT PK_DIVISAO
+		PRIMARY KEY(id)
+
+ALTER TABLE Divisao
+        ADD CONSTRAINT FK_DIVISAO_UNIDADE
+		FOREIGN KEY (id_unidade)
+		REFERENCES Unidade(id)
+		
+Create table Dispositivo
+(
+id int identity not null,
+id_divisao int,
+descricao varchar(50),
+pinoentrada int,
+pinosaida int,
+potencia int
+)
+
+ALTER TABLE Dispositivo
+		ADD CONSTRAINT PK_DISPOSITIVO
+		PRIMARY KEY(id)
+		
+ALTER TABLE Dispositivo
+        ADD CONSTRAINT FK_DISPOSITIVO_DIVISAO
+		FOREIGN KEY (id_divisao)
+		REFERENCES Divisao(id)
+		
+Create table Comando
+(
+id int identity not null,
+id_controle int,
+cmd varchar(50),
+nome varchar(50),
+estado int,
+estilo varchar(50),
+cor varchar(50), 
+pino int
+)
+ALTER TABLE Comando
+		ADD CONSTRAINT PK_COMANDO
+		PRIMARY KEY(id)
+
+ALTER TABLE Comando
+        ADD CONSTRAINT FK_COMANDO_CONTROLE
+		FOREIGN KEY (id_controle)
+		REFERENCES Controle(id)
+
+Create table Historico
+(
+id int identity not null,
+id_comando int,
+id_dispositivo int,
+pinoentrada varchar(2),
+pinosaida varchar(2),
+momento DateTime,
+)
+ALTER TABLE Historico
+        ADD CONSTRAINT FK_HISTORICO_COMANDO
+		FOREIGN KEY (id_comando)
+		REFERENCES Comando(id)
+		
+ALTER TABLE Historico
+        ADD CONSTRAINT FK_HISTORICO_DISPOSITIVO
+		FOREIGN KEY (id_dispositivo)
+		REFERENCES Dispositivo(id)
+		
+ALTER TABLE Historico
+		ADD CONSTRAINT PK_HISTORICO
+		PRIMARY KEY(id)
+
+Create table ComandoDispositivo
+(
+id int identity not null,
+id_dispositivo int,
+id_comando int,
+consumo varchar(50),
+equipamento varchar(50),
+marca varchar(50),
+modelo varchar(50),
+)
+ALTER TABLE ComandoDispositivo
+		ADD CONSTRAINT PK_COMANDO_DISPOSITIVO
+		PRIMARY KEY(id)
+
+ALTER TABLE ComandoDispositivo
+        ADD CONSTRAINT FK_COMANDO_DISPOSITIVO_DISPOSITIVO
+		FOREIGN KEY (id_dispositivo)
+		REFERENCES Dispositivo(id)
+		
+ALTER TABLE ComandoDispositivo
+        ADD CONSTRAINT FK_COMANDO_DISPOSITIVO_COMANDO	
+		FOREIGN KEY (id_comando)
+		REFERENCES Comando(id)
+
+Create table Evento
+(
+id int identity not null,
+id_agenda int,
+id_comando int,
+id_dispositivo int,
+semana varchar,
+hora time)
+
+ALTER TABLE Evento
+		ADD CONSTRAINT PK_EVENTO
+		PRIMARY KEY(id)
+
+ALTER TABLE Evento
+        ADD CONSTRAINT FK_EVENTO_COMANDO
+		FOREIGN KEY (id_comando)
+		REFERENCES Comando(id)
+		
+ALTER TABLE Evento
+        ADD CONSTRAINT FK_EVENTO_DISPOSITIVO
+		FOREIGN KEY (id_dispositivo)
+		REFERENCES Dispositivo(id)
+
+Create table Agenda
+(
+id int identity not null,
+domingo bit,
+segunda bit,
+terca bit,
+quarta bit,
+quinta bit,
+sexta bit,
+sabado bit,
+hora time
+)
+
+ALTER TABLE Agenda
+		ADD CONSTRAINT PK_AGENDA
+		PRIMARY KEY(id)
+
+ALTER TABLE Evento
+        ADD CONSTRAINT FK_EVENTO_AGENDA
+		FOREIGN KEY (id_agenda)
+		REFERENCES Agenda(id)
+
+create table Leitor(
+id int identity not null,
+nome varchar(50),
+condicao varchar,
+valor decimal(10,2),
+tipo varchar,
+sensibilidade decimal (10,2),
+id_dispositivo int,
+id_comando int
+)
+ALTER TABLE Leitor
+		ADD CONSTRAINT PK_LEITOR
+		PRIMARY KEY(id)
+
+ALTER TABLE Leitor
+        ADD CONSTRAINT FK_LEITOR_DISPOSITIVO
+		FOREIGN KEY (id_dispositivo)
+		REFERENCES Dispositivo(id)
+
+ALTER TABLE Leitor
+        ADD CONSTRAINT FK_LEITOR_COMANDO
+		FOREIGN KEY (id_comando)
+		REFERENCES Comando(id)

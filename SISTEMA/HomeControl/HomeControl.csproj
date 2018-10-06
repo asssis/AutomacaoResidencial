@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{16A4E518-7E9E-4F72-A2DE-ED566848712D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HomeControl</RootNamespace>
+    <AssemblyName>HomeControl</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Css\BlocosControle.css" />
+    <Content Include="Css\BotoesControle.css" />
+    <Content Include="Css\ControleFormulario.css" />
+    <Content Include="Css\ControlesPersonalizados.css" />
+    <Content Include="Css\CorpoPagina.css" />
+    <Content Include="Css\Graficos.css" />
+    <Content Include="Css\Mensagens.css" />
+    <Content Include="Css\MenuLateralEsquerdo.css" />
+    <Content Include="Css\MenuTopo.css" />
+    <Content Include="Css\Range.css" />
+    <Content Include="Css\Responsivo.css" />
+    <Content Include="default.aspx" />
+    <Content Include="Forms\Administrador\WFBuscarEventosMemoria.aspx" />
+    <Content Include="Forms\Administrador\WFBuscarFalhas.aspx" />
+    <Content Include="Forms\Administrador\WFBuscarUsuario.aspx" />
+    <Content Include="Forms\Administrador\WFIndex.aspx" />
+    <Content Include="Forms\Administrador\WFManterUsuario.aspx" />
+    <Content Include="Forms\Cliente\WFBuscarAgendamentos.aspx" />
+    <Content Include="Forms\Cliente\WFBuscarEvento.aspx" />
+    <Content Include="Forms\Cliente\WFConsumo.aspx" />
+    <Content Include="Forms\Cliente\WFControle.aspx" />
+    <Content Include="Forms\Cliente\WFDispositivo.aspx" />
+    <Content Include="Forms\Cliente\WFDivisao.aspx" />
+    <Content Include="Forms\Cliente\WFHistorico.aspx" />
+    <Content Include="Forms\Cliente\WFManterEvento.aspx" />
+    <Content Include="Forms\Cliente\WFUnidade.aspx" />
+    <Content Include="Forms\Tecnico\WFBuscarComando.aspx" />
+    <Content Include="Forms\Tecnico\WFBuscarControle.aspx" />
+    <Content Include="Forms\Tecnico\WFBuscarDispositivo.aspx" />
+    <Content Include="Forms\Tecnico\WFBuscarDivisao.aspx" />
+    <Content Include="Forms\Tecnico\WFBuscarLeitor.aspx" />
+    <Content Include="Forms\Tecnico\WFBuscarUnidade.aspx" />
+    <Content Include="Forms\Tecnico\WFBuscarUsuario.aspx" />
+    <Content Include="Forms\Tecnico\WFIndex.aspx" />
+    <Content Include="Forms\Tecnico\WFManterComando.aspx" />
+    <Content Include="Forms\Tecnico\WFManterControle.aspx" />
+    <Content Include="Forms\Tecnico\WFManterDispositivo.aspx" />
+    <Content Include="Forms\Tecnico\WFManterDivisao.aspx" />
+    <Content Include="Forms\Tecnico\WFManterLeitor.aspx" />
+    <Content Include="Forms\Tecnico\WFManterUnidade.aspx" />
+    <Content Include="Forms\WFLogin.aspx" />
+    <Content Include="Img\busca.png" />
+    <Content Include="Img\cadastro.png" />
+    <Content Include="Img\casa.png" />
+    <Content Include="Img\on-of.png" />
+    <Content Include="Img\sair.png" />
+    <Content Include="Jscript\jquery.min.js" />
+    <Content Include="Jscript\JSCliente.js" />
+    <Content Include="Jscript\JSTecAdm.js" />
+    <Content Include="Jscript\RangeSlider.min.js" />
+    <Content Include="WebService\webHomeControl.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administrador\WFBuscarEventosMemoria.aspx.cs">
+      <DependentUpon>WFBuscarEventosMemoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Administrador\WFBuscarEventosMemoria.aspx.designer.cs">
+      <DependentUpon>WFBuscarEventosMemoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administrador\WFBuscarFalhas.aspx.cs">
+      <DependentUpon>WFBuscarFalhas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Administrador\WFBuscarFalhas.aspx.designer.cs">
+      <DependentUpon>WFBuscarFalhas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administrador\WFBuscarUsuario.aspx.cs">
+      <DependentUpon>WFBuscarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Administrador\WFBuscarUsuario.aspx.designer.cs">
+      <DependentUpon>WFBuscarUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administrador\WFIndex.aspx.cs">
+      <DependentUpon>WFIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Administrador\WFIndex.aspx.designer.cs">
+      <DependentUpon>WFIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administrador\WFManterUsuario.aspx.cs">
+      <DependentUpon>WFManterUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Administrador\WFManterUsuario.aspx.designer.cs">
+      <DependentUpon>WFManterUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cliente\WFBuscarAgendamentos.aspx.cs">
+      <DependentUpon>WFBuscarAgendamentos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Cliente\WFBuscarAgendamentos.aspx.designer.cs">
+      <DependentUpon>WFBuscarAgendamentos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cliente\WFBuscarEvento.aspx.cs">
+      <DependentUpon>WFBuscarEvento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Cliente\WFBuscarEvento.aspx.designer.cs">
+      <DependentUpon>WFBuscarEvento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cliente\WFConsumo.aspx.cs">
+      <DependentUpon>WFConsumo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Cliente\WFConsumo.aspx.designer.cs">
+      <DependentUpon>WFConsumo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cliente\WFControle.aspx.cs">
+      <DependentUpon>WFControle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Cliente\WFControle.aspx.designer.cs">
+      <DependentUpon>WFControle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cliente\WFDispositivo.aspx.cs">
+      <DependentUpon>WFDispositivo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Cliente\WFDispositivo.aspx.designer.cs">
+      <DependentUpon>WFDispositivo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cliente\WFDivisao.aspx.cs">
+      <DependentUpon>WFDivisao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Cliente\WFDivisao.aspx.designer.cs">
+      <DependentUpon>WFDivisao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cliente\WFHistorico.aspx.cs">
+      <DependentUpon>WFHistorico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Cliente\WFHistorico.aspx.designer.cs">
+      <DependentUpon>WFHistorico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cliente\WFManterEvento.aspx.cs">
+      <DependentUpon>WFManterEvento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Cliente\WFManterEvento.aspx.designer.cs">
+      <DependentUpon>WFManterEvento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cliente\WFUnidade.aspx.cs">
+      <DependentUpon>WFUnidade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Cliente\WFUnidade.aspx.designer.cs">
+      <DependentUpon>WFUnidade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tecnico\WFBuscarComando.aspx.cs">
+      <DependentUpon>WFBuscarComando.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Tecnico\WFBuscarComando.aspx.designer.cs">
+      <DependentUpon>WFBuscarComando.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tecnico\WFBuscarControle.aspx.cs">
+      <DependentUpon>WFBuscarControle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Tecnico\WFBuscarControle.aspx.designer.cs">
+      <DependentUpon>WFBuscarControle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tecnico\WFBuscarDispositivo.aspx.cs">
+      <DependentUpon>WFBuscarDispositivo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Tecnico\WFBuscarDispositivo.aspx.designer.cs">
+      <DependentUpon>WFBuscarDispositivo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tecnico\WFBuscarDivisao.aspx.cs">
+      <DependentUpon>WFBuscarDivisao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Tecnico\WFBuscarDivisao.aspx.designer.cs">
+      <DependentUpon>WFBuscarDivisao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tecnico\WFBuscarLeitor.aspx.cs">
+      <DependentUpon>WFBuscarLeitor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Tecnico\WFBuscarLeitor.aspx.designer.cs">
+      <DependentUpon>WFBuscarLeitor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tecnico\WFBuscarUnidade.aspx.cs">
+      <DependentUpon>WFBuscarUnidade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Tecnico\WFBuscarUnidade.aspx.designer.cs">
+      <DependentUpon>WFBuscarUnidade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tecnico\WFBuscarUsuario.aspx.cs">
+      <DependentUpon>WFBuscarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Tecnico\WFBuscarUsuario.aspx.designer.cs">
+      <DependentUpon>WFBuscarUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tecnico\WFIndex.aspx.cs">
+      <DependentUpon>WFIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Tecnico\WFIndex.aspx.designer.cs">
+      <DependentUpon>WFIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tecnico\WFManterComando.aspx.cs">
+      <DependentUpon>WFManterComando.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Tecnico\WFManterComando.aspx.designer.cs">
+      <DependentUpon>WFManterComando.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tecnico\WFManterControle.aspx.cs">
+      <DependentUpon>WFManterControle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Tecnico\WFManterControle.aspx.designer.cs">
+      <DependentUpon>WFManterControle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tecnico\WFManterDispositivo.aspx.cs">
+      <DependentUpon>WFManterDispositivo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Tecnico\WFManterDispositivo.aspx.designer.cs">
+      <DependentUpon>WFManterDispositivo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tecnico\WFManterDivisao.aspx.cs">
+      <DependentUpon>WFManterDivisao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Tecnico\WFManterDivisao.aspx.designer.cs">
+      <DependentUpon>WFManterDivisao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tecnico\WFManterLeitor.aspx.cs">
+      <DependentUpon>WFManterLeitor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Tecnico\WFManterLeitor.aspx.designer.cs">
+      <DependentUpon>WFManterLeitor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tecnico\WFManterUnidade.aspx.cs">
+      <DependentUpon>WFManterUnidade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Tecnico\WFManterUnidade.aspx.designer.cs">
+      <DependentUpon>WFManterUnidade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WFLogin.aspx.cs">
+      <DependentUpon>WFLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\WFLogin.aspx.designer.cs">
+      <DependentUpon>WFLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mpage\MPAdministrador.Master.cs">
+      <DependentUpon>MPAdministrador.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mpage\MPAdministrador.Master.designer.cs">
+      <DependentUpon>MPAdministrador.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Mpage\MPCliente.Master.cs">
+      <DependentUpon>MPCliente.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mpage\MPCliente.Master.designer.cs">
+      <DependentUpon>MPCliente.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Mpage\MPExterno.Master.cs">
+      <DependentUpon>MPExterno.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mpage\MPExterno.Master.designer.cs">
+      <DependentUpon>MPExterno.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Mpage\MPTecnico.Master.cs">
+      <DependentUpon>MPTecnico.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mpage\MPTecnico.Master.designer.cs">
+      <DependentUpon>MPTecnico.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebService\webHomeControl.asmx.cs">
+      <DependentUpon>webHomeControl.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Mpage\MPCliente.Master" />
+    <Content Include="Mpage\MPTecnico.Master" />
+    <Content Include="Mpage\MPExterno.Master" />
+    <Content Include="Mpage\MPAdministrador.Master" />
+    <Content Include="Manuais\USUARIO.pdf" />
+    <Content Include="Manuais\DESENVOLVEDOR.pdf" />
+    <None Include="Properties\PublishProfiles\HomeControl.pubxml" />
+    <None Include="Properties\PublishProfiles\IIS.pubxml" />
+    <Content Include="web.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
+      <Project>{3335c180-1283-412a-adb4-a3ce1469d287}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>8080</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54497/</IISUrl>
+          <NTLMAuthentication>True</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

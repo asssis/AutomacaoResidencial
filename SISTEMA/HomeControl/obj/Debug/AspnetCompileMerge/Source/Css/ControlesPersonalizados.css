@@ -1,0 +1,318 @@
+﻿  body {
+            background: #777;
+        }
+
+        .inicio {
+            clear: both;
+        }
+/*botoes*/
+.a-toch-um-inteiro {
+            text-align:center;
+            text-decoration:none;
+            padding-top:20px;
+            width:calc(100% - 4px);
+            height: 50px;
+            border: 0px;
+            color: #fff;
+            font-size:30px;
+            border-radius: 3px;
+            margin: 2px;
+            float: left;
+        }
+div.tela-simples>input[type="submit"].a-toch-um-inteiro {
+    padding-top:8px;
+    height:70px;
+    font-size:28px;
+}
+div.tela-simples>input[type="submit"].a-toch-um-meio {
+    padding-top:8px;
+    height:70px;
+    font-size:28px;
+}
+.a-toch-um-meio {
+            text-align:center;
+            text-decoration:none;
+            padding-top:20px;
+            width:calc(50% - 4px);
+            height: 50px;
+            border: 0px;
+            color: #fff;
+            font-size:30px;
+            border-radius: 3px;
+            margin: 2px;
+            float: left;
+        }
+div.tela-simples>input[type="submit"].a-toch-um-meio {
+    padding-top:8px;
+    height:70px;
+    font-size:28px;
+}
+.a-toch-um-terco {
+            text-align:center;
+            text-decoration:none;
+            padding-top:20px;
+            width:calc(33.3333333% - 4px);
+            height: 50px;
+            border: 0px;
+            color: #fff;
+            font-size:30px;
+            border-radius: 3px;
+            margin: 2px;
+            float: left;
+        }
+div.tela-simples>input[type="submit"].a-toch-um-terco {
+    padding-top:8px;
+    height:70px;
+    font-size:28px;
+}
+.meio {
+            margin-left:calc(33.41% - 4px);
+            margin-right:calc(33.41% - 4px);
+        }
+.pre-visualizacao {
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:0px;
+    padding-left:10px;
+    padding-right:10px;
+    margin-top:20px;
+    max-width:900px;
+}
+
+.tela-controle {
+float: left;
+border-top: 100px solid #333;
+width:calc(100% - 40px);
+background: #333;
+border-right: 20px solid #333;
+border-bottom: 20px solid #333;
+border-left: 20px solid #333;
+min-height: 100px;
+border-radius: 10px;
+}
+.tela-simples{
+            margin-top:5px;
+            float: left;
+            width:calc(100% - 40px);
+            background: #333;
+            border-top: 20px solid #333;
+            border-right: 20px solid #333;
+            border-bottom: 20px solid #333;
+            border-left: 20px solid #333;
+            border-radius: 10px;
+            margin-bottom:10px;
+
+        }
+.tela-estado{
+margin-top:5px;
+margin-bottom:5px;
+float: left;
+width:100%;
+background: #ddd;
+border-radius: 10px;
+margin-bottom:20px;
+}
+    .tela-estado:hover {
+        margin-top:5px;
+margin-bottom:5px;
+float: left;
+width:100%;
+/*background:#fff;*/
+border-radius: 10px;
+margin-bottom:20px;
+    }
+.estado {
+            float:left;
+            text-align:center;
+            margin:2px;
+            min-height: 80px;
+            border: 0px;
+            color: #fff;
+            font-size:40px;
+            border-radius: 10px;
+            width:200px;
+            margin-right:calc(16.66% - 100px);
+            margin-left:calc(16.66% - 100px);
+            
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    direction: ltr;
+    text-overflow: ellipsis;
+        }
+.estado > p {
+                font-size:30px;
+                margin-top:0px;
+               font-weight:bold;
+               margin-bottom:0px;
+        }
+
+.btn-touch-sair {
+    color: #fff;
+            font-size: 60px;
+            margin-top: -80px;
+            float: right;
+            background:#333;
+            border:0px;
+}
+.btn-touch-sair:hover {
+            color: #000;
+            font-size: 60px;
+            margin-top: -80px;
+            float: right;
+            border-radius:5px;
+            border:0px;
+            background: #fff;
+}
+.titulo {
+            color: #fff;
+            font-size: 60px;
+            margin-top: -80px;
+            float: left;
+        }
+.campo-fomr {
+            float: left;
+            width: 100%;
+        }
+.range-toch-inteiro {
+            float:left;            
+            height: 100px;
+            color: #fff;
+            font-size:30px;
+            border-radius: 10px;
+            margin: 2px;
+            width:calc(100% - 4px);
+        }
+
+/*semana*/
+
+p.semana-desativa {
+    width:40px;
+    height:70px;
+    float:left;
+    color:#666;
+    border-radius:5px;
+    font-size:60px;
+    text-align:center;
+    margin-left:px;
+    margin-right:0px;
+    padding-right:2px;
+    padding-left:2px;
+    margin-top:15px;
+    margin-bottom:5px;
+}
+p.semana-ativa {
+    width:40px;
+    height:70px;
+    float:left;
+    color:#72fc06;
+    border-radius:5px;
+    font-size:60px;
+    text-align:center;
+    margin-left:0px;
+    margin-right:0px;
+    padding-right:2px;
+    padding-left:2px;
+    margin-top:15px;
+    margin-bottom:5px;
+}
+.phora {
+    font-size: 60px;
+    float: left;
+    height: 70px;
+    margin-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    text-align: center;
+    margin-left:10px;
+}
+.centralizar-tempo {
+    margin-left:auto;
+    margin-right:auto;
+    width:320px;
+}
+.pcomando {
+    font-size: 60px;
+    float:right;
+    height: 70px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    text-align: center;
+    margin-right:10px;
+}
+       .divchsemana {
+            text-align:center;
+            width:70px;
+            background:#2b9dd1;
+            padding:10px;
+            color:#fff;
+            font-size:30px;
+            border-radius:10px;
+            float:left;
+            margin-left:calc(7.14% - 45px);
+            margin-right:calc(7.14% - 45px);
+        }
+        div.divchsemana > p {
+            margin-top:10px;
+            margin-bottom:5px;
+        }
+
+.chgruposemana {
+    background:#333;
+    border-radius:10px;
+    float:inherit;
+    text-align:center;
+    width:calc(100% - 4px);
+    margin-bottom:10px;
+}
+.txthora {
+    width:calc(100% - 4px);
+    font-size:100px;
+    margin-bottom:30px;
+    margin-top:30px;
+    background:#777;
+    border:0px;
+    color:#fff;
+    border-radius:10px;
+    text-align:center;
+}
+.divchcomando {
+    float:left;
+    background:#2b9dd1;
+    width:calc(100% - 4px);
+    height:70px;
+    margin-bottom:2px;
+    margin-top:2px;
+    border-radius:5px;
+}
+    .divchcomando > p {
+      font-size:40px;
+      margin:0px;
+      margin-left:10px;
+      float:left;
+      color:#fff;
+      margin-top:10px;
+    }
+div.divchcomando >  input[type=radio] {
+    float:right;
+    margin:0px;
+    margin-top:22px;
+    margin-right:10px;
+    border: 0px;
+    height: 2em;
+    width:2em;
+}
+.divnula {
+    margin:0px;
+    border:0px;
+    padding:0px;
+    float:left;
+    width:100%;
+}
+.lblrange {
+    color:#fff;
+    font-size:40px;
+}

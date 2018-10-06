@@ -1,0 +1,19 @@
+C:\Users\Junior\Desktop\TCC SISTEMA\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Junior\Desktop\TCC SISTEMA\Negocio\bin\Debug\Negocio.dll
+C:\Users\Junior\Desktop\TCC SISTEMA\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Junior\Desktop\TCC SISTEMA\Negocio\obj\Debug\Negocio.dll
+C:\Users\Junior\Desktop\TCC SISTEMA\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Junior_2\Desktop\TCC HomeControl\TCC SISTEMA\Negocio\bin\Debug\Negocio.dll
+C:\Users\Junior_2\Desktop\TCC HomeControl\TCC SISTEMA\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Junior_2\Desktop\TCC HomeControl\TCC SISTEMA\Negocio\obj\Debug\Negocio.dll
+C:\Users\Junior_2\Desktop\TCC HomeControl\TCC SISTEMA\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Junior_2\Desktop\TCC HomeControl\TCC SISTEMA\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Junior\Desktop\TCC HomeControl\TCC SISTEMA\Negocio\bin\Debug\Negocio.dll
+C:\Users\Junior\Desktop\TCC HomeControl\TCC SISTEMA\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Junior\Desktop\TCC HomeControl\TCC SISTEMA\Negocio\obj\Debug\Negocio.dll
+C:\Users\Junior\Desktop\TCC HomeControl\TCC SISTEMA\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Junior\Desktop\TCC HomeControl\TCC SISTEMA\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Malta\Desktop\TCC\SISTEMA\Negocio\bin\Debug\Negocio.dll
+C:\Users\Malta\Desktop\TCC\SISTEMA\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Malta\Desktop\TCC\SISTEMA\Negocio\obj\Debug\Negocio.dll
+C:\Users\Malta\Desktop\TCC\SISTEMA\Negocio\obj\Debug\Negocio.pdb
