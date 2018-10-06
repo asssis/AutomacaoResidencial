@@ -7,8 +7,12 @@ O sistema que desenvolvir tem por objetivo fazer o controle de toda a casa, tem 
 
 
 #Vídeo de apresentação
+
+
 https://www.youtube.com/watch?v=JQfm4zxRZkg&list=LLB5WMjH1fq2VmBSETwOX4ig
 
 #Reportagem sobre o sistema
+
+
 http://rondoniaovivo.com/geral/noticia/2017/06/03/amazon-event-tech-ciclo-de-palestras-sobre-tecnologia-da-informacao.html
 
