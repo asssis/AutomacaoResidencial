@@ -14,5 +14,5 @@ https://www.youtube.com/watch?v=JQfm4zxRZkg&list=LLB5WMjH1fq2VmBSETwOX4ig
 #Reportagem sobre o sistema
 
 
-http://rondoniaovivo.com/geral/noticia/2017/06/03/amazon-event-tech-ciclo-de-palestras-sobre-tecnologia-da-informacao.html
+http://rondoniaovivo.com/geral/noticia/2016/07/29/academico-da-uniron-desenvolve-sistema-que-promete-comodidade-e-sustentabilidade.html
 
